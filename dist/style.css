@@ -29,11 +29,7 @@ p {
   width: 25vw;
   width: clamp(25vw, 50vh, 90vw) !important;
   border-radius: 1rem;
-  background-color: #ffffff;
-  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-  -webkit-backdrop-filter: blur(1rem) saturate(125%) !important;
-          backdrop-filter: blur(1rem) saturate(125%) !important;
+  background: #ffffff;
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -43,7 +39,7 @@ p {
 }
 
 .img__holder {
-  background-image: url("/app/img/DP.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/profile-e22c1.appspot.com/o/DP.jpg?alt=media&token=b87e442f-04be-4268-9e1f-2ac01f2c3966 ");
   background-size: 15vh 15vh;
   background-repeat: no-repeat;
   border: 0.3rem solid white;
@@ -135,7 +131,7 @@ section {
 }
 
 .card__header {
-  background-image: url("/app/img/header_gradient.jpg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/profile-e22c1.appspot.com/o/header_gradient.jpg?alt=media&token=9efee763-a31e-4f28-ae55-fd90e5111935");
   overflow: hidden;
   background-size: cover;
   background-position: right 50% bottom 70%;
@@ -148,7 +144,8 @@ section {
 }
 
 .icons img {
-  height: 7.5vh;
+  height: 7vh;
+  padding: 1.25vh !important;
   width: auto;
   padding: 1vh;
 }
