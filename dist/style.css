@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: black;
 }
 
@@ -23,6 +23,16 @@ h4 {
 
 p {
   font-weight: 400;
+}
+
+.main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .card {
@@ -74,9 +84,42 @@ p {
   border-top: 1px solid rgba(62, 191, 214, 0.2);
 }
 
+.card__quote {
+  width: clamp(25vw, 50vh, 90vw) !important;
+  border-radius: 1rem;
+  background: #733fc8;
+  color: white;
+  margin-bottom: 3vh;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  -webkit-box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(115, 63, 200, 0.2);
+          box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(115, 63, 200, 0.2);
+}
+
+.quote__content {
+  padding: 4vh;
+}
+
+.quote {
+  background-image: url("/app/img/quote.svg");
+  background-repeat: no-repeat;
+  background-position: 5% 8%;
+  background-size: 14vh 12vh;
+}
+
+.quote p {
+  text-align: left;
+}
+
+.quote h4 {
+  text-align: end;
+}
+
 .place {
   padding-bottom: 1.25vh;
-  padding-top: .25vh;
+  padding-top: 0.25vh;
 }
 
 .connect {
