@@ -85,6 +85,7 @@ p {
 }
 
 .card__quote {
+  width: 25vw;
   width: clamp(25vw, 50vh, 90vw) !important;
   border-radius: 1rem;
   background: #733fc8;
@@ -103,7 +104,7 @@ p {
 }
 
 .quote {
-  background-image: url("/app/img/quote.svg");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/profile-e22c1.appspot.com/o/quote.svg?alt=media&token=a80face8-350d-462e-bc2c-44211e90bd9d");
   background-repeat: no-repeat;
   background-position: 5% 8%;
   background-size: 14vh 12vh;
@@ -208,6 +209,12 @@ section {
     margin: -4rem 0 0 0 !important;
     margin-bottom: 1.25vh;
   }
+  .card__quote {
+    width: 90vw !important;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -215,6 +222,12 @@ section {
     width: 45vw;
     border-radius: 1rem;
     background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card__quote {
+    width: 45vw;
+    border-radius: 1rem;
     overflow: hidden;
     text-align: center;
   }
