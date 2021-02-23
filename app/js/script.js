@@ -1,7 +1,7 @@
-$(window).on("load",function(){
+$(window).on("load", function () {
+  AOS.init();
   $(".loader-wrapper").fadeOut("slow");
 });
-
 
 var firebaseConfig = {
   apiKey: "AIzaSyDZgGVIfp3dq-2vI7cW_Onv5cFth3HNqZU",
@@ -17,15 +17,3 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var perf = firebase.performance();
 firebase.analytics();
-
-document.addEventListener("DOMContentLoaded", function () {
-  heightDiv();
-});
-
-function heightDiv() {
-  var quoteHeight = document.getElementById("quote__size").offsetHeight;
-  var sectionHeight = document.getElementById("section").offsetHeight;
-
-  var profileAreaHeight = sectionHeight - quoteHeight;
-  document.getElementById("profile").style.height = profileAreaHeight + "px";
-}
