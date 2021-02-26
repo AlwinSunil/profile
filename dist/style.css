@@ -189,6 +189,41 @@ p {
   height: auto;
 }
 
+.card__warning {
+  width: 50vw;
+  border-radius: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  -webkit-box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+          box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+  height: auto;
+}
+
+.card__warning h2 {
+  padding: 10vh;
+}
+
+.warning__container {
+  height: 100vh;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .img__holder {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/profile-e22c1.appspot.com/o/DP.jpg?alt=media&token=b87e442f-04be-4268-9e1f-2ac01f2c3966 ");
   background-size: 15vh 15vh;
@@ -278,6 +313,11 @@ p {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 10vh;
+}
+
+.icon__update {
+  padding-top: 1vh;
+  height: 7vh;
 }
 
 .icons img {
@@ -376,6 +416,18 @@ section {
   .quote {
     background-position: 5% 8%;
   }
+  .card__warning {
+    width: 90vw !important;
+    border-radius: 1rem;
+    background: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    -webkit-box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+            box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -385,6 +437,18 @@ section {
     background-color: #ffffff;
     overflow: hidden;
     text-align: center;
+  }
+  .card__warning {
+    width: 50vw;
+    border-radius: 1rem;
+    background: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    -webkit-box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+            box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

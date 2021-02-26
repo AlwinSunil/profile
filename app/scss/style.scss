@@ -119,6 +119,30 @@ p {
   height: auto;
 }
 
+.card__warning {
+  width: 50vw;
+  border-radius: 1rem;
+  background: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba($color: #57a6f0, $alpha: 0.5);
+  height: auto;
+}
+
+.card__warning h2 {
+  padding: 10vh;
+}
+.warning__container {
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .img__holder {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/profile-e22c1.appspot.com/o/DP.jpg?alt=media&token=b87e442f-04be-4268-9e1f-2ac01f2c3966 ");
   background-size: 15vh 15vh;
@@ -192,6 +216,11 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   height: 10vh;
+}
+
+.icon__update{
+  padding-top: 1vh;
+  height: 7vh;
 }
 
 .icons img {
@@ -277,6 +306,17 @@ section {
   .quote {
     background-position: 5% 8%;
   }
+  .card__warning {
+    width: 90vw !important;
+    border-radius: 1rem;
+    background: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba($color: #57a6f0, $alpha: 0.5);
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -286,5 +326,16 @@ section {
     background-color: #ffffff;
     overflow: hidden;
     text-align: center;
+  }
+  .card__warning {
+    width: 50vw;
+    border-radius: 1rem;
+    background: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+    box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba($color: #57a6f0, $alpha: 0.5);
+    height: auto;
   }
 }
