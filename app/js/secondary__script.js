@@ -13,8 +13,6 @@ if ((verOffset = nAgt.indexOf("Opera")) != -1) {
     fullVersion = nAgt.substring(verOffset + 8);
   var majorVersion = parseInt("" + fullVersion, 10);
   if (majorVersion < 66) {
-    console.log("Version " + majorVersion);
-    document.write("Not supported" + "<br>");
     var elems = document.getElementsByClassName("section__main");
     for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = "none";
@@ -37,8 +35,6 @@ else if ((verOffset = nAgt.indexOf("MSIE")) != -1) {
   fullVersion = nAgt.substring(verOffset + 5);
   var majorVersion = parseInt("" + fullVersion, 10);
   if (majorVersion <= 12) {
-    console.log("Version " + majorVersion);
-    document.write("Not supported" + "<br>");
     var elems = document.getElementsByClassName("section__main");
     for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = "none";
@@ -57,8 +53,6 @@ else if ((verOffset = nAgt.indexOf("Chrome")) != -1) {
   fullVersion = nAgt.substring(verOffset + 7);
   var majorVersion = parseInt("" + fullVersion, 10);
   if (majorVersion < 79) {
-    console.log("Version " + majorVersion);
-    document.write("Not supported" + "<br>");
     var elems = document.getElementsByClassName("section__main");
     for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = "none";
@@ -84,8 +78,6 @@ else if ((verOffset = nAgt.indexOf("Safari")) != -1) {
     fullVersion = nAgt.substring(verOffset + 8);
   var majorVersion = parseInt("" + fullVersion, 10);
   if (majorVersion < 13.1) {
-    console.log("Version " + majorVersion);
-    document.write("Not supported" + "<br>");
     var elems = document.getElementsByClassName("section__main");
     for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = "none";
@@ -109,8 +101,6 @@ else if ((verOffset = nAgt.indexOf("Firefox")) != -1) {
   fullVersion = nAgt.substring(verOffset + 8);
   var majorVersion = parseInt("" + fullVersion, 10);
   if (majorVersion < 75) {
-    console.log("Version " + majorVersion);
-    document.write("Not supported" + "<br>");
     var elems = document.getElementsByClassName("section__main");
     for (var i = 0; i < elems.length; i += 1) {
       elems[i].style.display = "none";
@@ -139,7 +129,6 @@ else if (
     var majorVersion = parseInt("" + fullVersion, 10);
     if (majorVersion <= 79) {
       console.log("Version " + majorVersion);
-      document.write("Not supported" + "<br>");
     }
   }
 }
@@ -165,7 +154,6 @@ $.get(
     var CityName = response.city;
     var Network = response.asn;
     var TimeVisited = response.time_zone.current_time;
-    console.log(TimeVisited);
     db.collection("Browser Detials")
       .doc("IP Address : " + IPAddress)
       .set({
@@ -176,12 +164,4 @@ $.get(
         City: CityName,
         Provider: Network,
         TimeVisited : TimeVisited
-      })
-      .then(() => {
-        console.log("Document successfully written!");
-      })
-      .catch((error) => {
-        console.error("Error writing document: ", error);
-      });
-    console.log(response.ip);
-  },"jsonp");
+      })},"jsonp");

@@ -132,19 +132,19 @@ body {
 
 h2 {
   font-weight: 500;
-  font-size: clamp(1.5rem, 2vw, 2rem) !important;
+  font-size: 4vh !important;
 }
 
 h5,
 h4 {
   font-weight: 400;
   opacity: 80%;
-  font-size: clamp(0.8rem, 2vw, 1rem) !important;
+  font-size: 2.5vh !important;
 }
 
 p {
   font-weight: 400;
-  font-size: clamp(0.75rem, 2vw, 1rem) !important;
+  font-size: 3vh !important;
 }
 
 .main {
@@ -178,14 +178,14 @@ p {
 .card {
   width: 25vw;
   width: clamp(25vw, 50vh, 90vw) !important;
-  border-radius: 1rem;
+  border-radius: 3vh;
   background: #ffffff;
   overflow: hidden;
   text-align: center;
   position: relative;
   z-index: 5;
-  -webkit-box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
-          box-shadow: 0.25rem 0.5rem 1rem 0.1rem rgba(87, 166, 240, 0.5);
+  -webkit-box-shadow: 0.25rem 0.5rem 2rem 0.3rem rgba(87, 166, 240, 0.5);
+          box-shadow: 0.25rem 0.5rem 2rem 0.3rem rgba(87, 166, 240, 0.5);
   height: auto;
 }
 
@@ -226,10 +226,10 @@ p {
 
 .img__holder {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/profile-e22c1.appspot.com/o/DP.jpg?alt=media&token=b87e442f-04be-4268-9e1f-2ac01f2c3966 ");
-  background-size: 15vh 15vh;
+  background-size: clamp(16vh, 2vw, 15vh) !important;
   background-repeat: no-repeat;
   background-position: 60% 50%;
-  border: 0.3rem solid white;
+  border: 0.5vh solid white;
   width: 16vh;
   height: 16vh;
   border-radius: 50%;
@@ -357,7 +357,7 @@ p {
 
 .age {
   opacity: 38%;
-  font-size: clamp(0.75rem, 2vw, 1.25rem);
+  font-size: 3vh;
   padding-bottom: 1vh;
 }
 
