@@ -144,24 +144,3 @@ if (isNaN(majorVersion)) {
   fullVersion = "" + parseFloat(navigator.appVersion);
   majorVersion = parseInt(navigator.appVersion, 10);
 }
-
-$.get(
-  "https://api.ipdata.co?api-key=test",
-  function (response) {
-    var IPAddress = response.ip;
-    var CountryName = response.country_name;
-    var Region = response.region;
-    var CityName = response.city;
-    var Network = response.asn;
-    var TimeVisited = response.time_zone.current_time;
-    db.collection("Browser Detials")
-      .doc("IP Address : " + IPAddress)
-      .set({
-        Version: nVer,
-        IP: IPAddress,
-        Country: CountryName,
-        State: Region,
-        City: CityName,
-        Provider: Network,
-        TimeVisited : TimeVisited
-      })},"jsonp");

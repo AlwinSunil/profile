@@ -6,7 +6,6 @@ $(window).on("load", function () {
 var firebaseConfig = {
   apiKey: "AIzaSyDZgGVIfp3dq-2vI7cW_Onv5cFth3HNqZU",
   authDomain: "profile-e22c1.firebaseapp.com",
-  databaseURL: "https://profile-e22c1-default-rtdb.firebaseio.com",
   projectId: "profile-e22c1",
   storageBucket: "profile-e22c1.appspot.com",
   messagingSenderId: "335802871020",
@@ -16,6 +15,4 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-var perf = firebase.performance();
 firebase.analytics();
-var db = firebase.firestore();
